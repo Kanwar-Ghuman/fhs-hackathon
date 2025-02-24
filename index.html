@@ -3,27 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Franklin Hackathon</title>
+    <title>FHS Hackathon</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <h1>Franklin Hackathon</h1>
-        <p class="date">March 2nd, 2025</p>
-        <p class="location">Franklin High School</p>
-      </div>
-      <div class="main-content">
-        <h2>Join us for 4 hours of innovation</h2>
-        <p>Connect. Create. Innovate.</p>
+      <header>
+        <h1>FHS Hackathon Overview</h1>
+      </header>
+      <div class="content">
+        <section class="schedule card">
+          <h2>Schedule</h2>
+          <ul>
+            <li>
+              <strong>Tuesday 2/25:</strong> Kickoff after school. Students
+              begin brainstorming with guidance on tech stack and project
+              approach.
+            </li>
+            <li>
+              <strong>Wednesday &amp; Thursday:</strong> Workshops and
+              activities.
+            </li>
+            <li>
+              <strong>Sunday 3/2:</strong> Presentations &amp; Ceremony at Main
+              Commons, 12–3pm (2 hrs worktime, 1 hr presentations).
+            </li>
+          </ul>
+        </section>
+        <section class="project-types card">
+          <h2>Project Types</h2>
+          <div class="types">
+            <div class="noncoding">
+              <h3>Non-Coding</h3>
+              <ul>
+                <li class="project-item">
+                  <div class="item-title">Presentation</div>
+                  <div class="item-description">
+                    Explain your solution and the problem it addresses
+                  </div>
+                </li>
+                <li>
+                  Research &amp; Mockups (Figma, website/software prototype)
+                </li>
+                <li>
+                  Physical Prototype (CAD models, slides, or physical mockups)
+                </li>
+                <li>Scenario demonstration</li>
+              </ul>
+            </div>
+            <div class="coding">
+              <h3>Coding</h3>
+              <ul>
+                <li class="project-item">
+                  <div class="item-title">Presentation</div>
+                  <div class="item-description">
+                    Explain your solution and the problem addresses
+                  </div>
+                </li>
+                <li>Live Demo of the Website/App</li>
+                <li>Future Plans for the App</li>
+                <li>Technical Overview</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <a
-          href="https://forms.google.com/your-form-link"
+          href="https://docs.google.com/forms/d/e/1FAIpLzr3xymabEmBdTWaXVnvjHk1Ldxr4URASSs7tsJfrNng/viewform?usp=header"
           class="cta-button"
           target="_blank"
-          >Register Interest</a
+          >Interest Form</a
         >
       </div>
     </div>
+
+    <!-- Include Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
