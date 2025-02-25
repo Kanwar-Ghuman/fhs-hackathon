@@ -5,12 +5,21 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #111; /* Dark background */
   color: #fff;
   overflow: auto;
   position: relative;
+  overflow-x: hidden;
 }
 
 .container {
@@ -20,6 +29,8 @@ body {
   max-width: 1200px;
   padding: 20px;
   margin: 0 auto;
+  margin-top: 60px;
+  padding-bottom: 2rem;
 }
 
 /* Header */
@@ -144,13 +155,102 @@ header h1 {
 }
 
 canvas {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 .subtitle {
   font-size: 1rem;
   color: rgba(255, 215, 0, 0.8);
   font-weight: normal;
+}
+
+/* Add this at the top of your existing CSS */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(34, 34, 34, 0.9);
+  padding: 1rem;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.2);
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd700;
+}
+
+/* Adjust existing container to account for navbar */
+.container {
+  margin-top: 60px;
+}
+/* Add these new styles to your existing CSS file */
+
+.rubric-section {
+  margin-bottom: 3rem;
+}
+
+.rubric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.rubric-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.rubric-item h3 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.rubric-item p {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.rubric-item ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.rubric-item ul li {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.rubric-item ul li strong {
+  color: #ffd700;
+}
+
+/* Adjust existing styles if needed */
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
 }
